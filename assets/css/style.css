@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    background-attachment: fixed;
+}
+body{
+    height: 2000px;
+}
+/* ------------------- navbar ------------------*/
+/*---------------global-----------*/
+.container{
+    width: 90%;
+    margin: auto;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+ 
+}
+nav .logo{
+    padding: 10px 20px;
+}
+nav .logo a{
+    text-decoration: none;
+    font-size: 32px;
+    color: brown;
+    font-weight: bold;
+}
+nav .logo span{
+    color: rgb(213, 178, 178);
+}
+nav .navs ul{
+    list-style-type: none;
+    display: flex;
+}
+nav .navs ul li{
+    padding:10px ;
+    margin-left:5px ;
+    font-weight: bold;
+    transition: 0.4s;
+}
+nav .navs ul li a{
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+nav .navs ul li a:hover{
+    color: brown;
+}
+
+nav .navs ul li .bar-icon{
+    display: none;
+    color: red;
+}
+nav .navs ul #bar-icon{
+    display: none;
+}
+/* ------------------- SECTION1 ------------------*/
+#section1 .container{
+    width: 90%;
+    margin: auto;
+}
+#section1 .container .main-img img{
+    width: 100%;
+    height: 60vh;
+    
+    /* background-image: url(/assets/images/home.jpg); */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px; 
+    
+
+
+}
+#section1 .container .mini-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+#section1 .container .mini-imgs img{
+    width: calc(94% / 6);
+   
+}
+
+/* ------------------- SECTION2 ------------------*/
+#section2{
+    padding-bottom: 30px;
+}
+#section2 .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#section2 .container .row .paragraphs{
+    width: calc(90% /3);
+}
+#section2 .container .row .paragraphs div{
+    display: flex;
+    flex-wrap: nowrap;
+    color: brown;
+    align-items: center;
+}
+#section2 .container .row .paragraphs div i{
+    margin: 0px 10px 0px 0px;
+    font-size: 32px;
+    font-weight: bold
+}
+#section2 .container .row .paragraphs div h4{
+    font-size:25px ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#section2 .container .row .paragraphs p{
+    margin-bottom: 20px ;
+    padding-top: 20px;
+
+
+}
+#section2 .container .row .paragraphs a{
+    padding: 5px;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+   
+}
+/* ------------------- SPLITTER ------------------*/
+.splitter{
+    margin-bottom: 10px;
+}
+.splitter > div {
+    display: flex;
+    color: gray;
+}
+
+.splitter > div h3{
+    text-transform: uppercase;
+    width: 10%;
+}
+.splitter div .hr{
+    width: 100%;
+    background-color: gray;
+
+}
+
+/* ------------------- SECTION3 ------------------*/
+#section3 .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#section3 .container .row .card{
+    width: calc(96% /4);
+    border: 1px solid gray;
+    font-weight: bold;
+}
+#section3 .container .row .card img{
+    width: 100%;
+    height: 40vh;
+  
+ 
+}
+#section3 .container .row .card h4{
+    padding: 5px;
+    color: gray;
+}
+#section3 .container .row .card p{
+    padding: 5px;
+    color: brown;
+}
+
+
+/* ------------------- FOOTER ------------------*/
+footer{
+    width: 100%;
+    background-color: rgb(238, 223, 205);
+    margin-top: 20px;
+}
+footer .container {
+    box-sizing: content-box;
+    background-color: rgb(234, 184, 173);
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+  
+}
+footer .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+footer .container .row div{
+    width: calc(95% / 3);
+  
+}
+footer .container .row h3{
+    padding: 5px;
+    margin: 10px;
+}
+footer .container .row p{
+    padding: 5px;
+    margin: 10px;
+}
+
+
+/* ------------ media quires -----------*/
+@media (max-width: 1200px){
+    .splitter > div h3{
+        text-transform: uppercase;
+        width: 25%;
+    }
+}
+@media (max-width: 992px){
+    nav .navs ul li{
+        display: none;
+    }
+    nav .navs ul #bar-icon{
+        display: list-item;
+    }
+    
+    #section1 .container .mini-imgs img{
+        width: calc(94% / 3);
+        margin-bottom: 20px;
+       
+    }
+    #section2 .container .row{
+        justify-content: space-around;
+
+    }
+    #section2 .container .row .paragraphs{
+        width: calc(90% /2);
+        margin-bottom: 20px;
+    }
+    .splitter > div h3{
+        text-transform: uppercase;
+        width: 30%;
+    }
+}
+@media (max-width: 767px){
+    #section1 .container .mini-imgs img{
+        width: calc(94% / 2);  
+    }
+    #section2 .container .row .paragraphs{
+        width:90%;
+   
+    }
+    #section3 .container .row .card{
+        width: calc(96% /2);
+        margin-bottom: 20px;
+    }
+    .splitter > div h3{
+        width: 40%;
+    }
+    footer .container .row div{
+        width: 100%;
+    
+    }
+   
+}
+@media (max-width: 576px){
+    #section1 .container .mini-imgs{
+        justify-content:center ;
+    }
+    #section1 .container .mini-imgs img{
+        width: calc(94% / 1);
+       
+    }
+    .splitter > div h3{
+        width: 60%;
+    }
+    #section3 .container .row{
+        justify-content: center;
+    }
+    #section3 .container .row .card{
+        width: calc(96% /1);   
+    }
+
+}
+@media (max-width: 400px){
+    .splitter > div h3{
+        width: 50%;
+    }
+    .splitter div .hr{
+        width: 50%;
+       
+    
+    }
+
+}
