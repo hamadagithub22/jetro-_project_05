@@ -266,6 +266,10 @@ footer .container .row p{
     }
    
 }
+@media (max-width: 597px){
+    .splitter > div h3{
+        width: 60%;
+    }
 @media (max-width: 576px){
     #section1 .container .mini-imgs{
         justify-content:center ;
@@ -285,12 +289,20 @@ footer .container .row p{
     }
 
 }
-@media (max-width: 400px){
+
+    .splitter div .hr{
+        width: 90%;
+       
+    
+    }
+
+}
+@media (max-width: 456px){
     .splitter > div h3{
         width: 50%;
     }
     .splitter div .hr{
-        width: 50%;
+        width: 40%;
        
     
     }
