@@ -213,6 +213,18 @@ footer .container .row p{
 
 
 /* ------------ media quires -----------*/
+@media (max-width: 1280px){
+    .splitter > div h3{
+        width: 20%;
+    }
+    .splitter div .hr{
+        width: 100%;
+       
+    
+    }
+    
+
+}
 @media (max-width: 1200px){
     .splitter > div h3{
         text-transform: uppercase;
@@ -308,3 +320,43 @@ footer .container .row p{
     }
 
 }
+@media (max-width: 428px){
+    .splitter > div h3{
+        width: 50%;
+    }
+    .splitter div .hr{
+        width: 48%;
+       
+    
+    }
+
+}
+@media (max-width: 375px){
+    .splitter > div h3{
+        width: 50%;
+    }
+    .splitter div .hr{
+        width: 48%;
+       
+    
+    }
+    
+
+}
+@media (max-width: 320px){
+    .splitter > div h3{
+        width: 50%;
+        font-size: 15px;
+    }
+    
+    .splitter div .hr{
+        width: 47%;
+       
+    
+    }
+    
+
+}
+
+
+
